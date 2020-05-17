@@ -1,3 +1,4 @@
+```html
 /**
 
  * 学习通
@@ -141,3 +142,5 @@ function nextUnit(){
 console.log("%c 欢迎使用本脚本，此科目有%c %d %c个小节，当前为 %c第%d小节 %c-chao", "color:#6dbcff", "color:red", window.unit, "color:#6dbcff", "color:red", window.unitCount, "font-size:8px");
 
 main();
+
+```
