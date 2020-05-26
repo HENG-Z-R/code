@@ -1,3 +1,9 @@
+# 队列实现
+
+**完整代码**
+
+
+```
 #define _CRT_SBCURE_NO_DEPRECATE
 #include set
 #include cmath
@@ -40,3 +46,5 @@ int main()
 	}
 	return 0;
 }
+
+```
