@@ -153,11 +153,14 @@ void BFS(GraphAdj G){
 		visited[i] = FALSE;
 	}
 	InitQueue(Q);  //初始化队列
-	for(int i = 0; i < G->numVertexes; i++){
+	for(int i = 0; i < G->numVertexes; i++)
+    {
+        if(!visited[i])
+        {
 		visited[i] = TRUE;
 		printf("\t%c", G->adjList[i].data);
 		EnQueue(Q, i);
-
+        }
 		while(!QueueisEmpty(Q)){
 			DeQueue(Q, &i);  //这里不断的修改i的值！！
 			EdgeNode *e = G->adjList[i].firstedge;  //i顶点的邻接链表的第一个结点
